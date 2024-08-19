@@ -1,0 +1,18 @@
+<main>
+  <h1>TODO LIST.</h1>
+  <section class="navbar">
+    <app-search-bar></app-search-bar>
+  </section>
+  <section class="notes">
+    <app-notes
+      *ngFor="let note of notes; let i = index"
+      [note]="note"
+      [noteId]="'note_' + i"
+    ></app-notes>
+    <div *ngIf="isEmpty; then emptyBlock"></div>
+  </section>
+</main>
+
+<ng-template #emptyBlock>
+  <app-empty-image></app-empty-image>
+</ng-template>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "description": "Study Angular",
+    "completed": false
+  },
+  {
+    "id": "2",
+    "description": "Study Java",
+    "completed": false
+  },
+  {
+    "id": "3",
+    "description": "Go to the Gym",
+    "completed": true
+  },
+  {
+    "id": "4",
+    "description": "Practice French",
+    "completed": false
+  }
+]

@@ -1,0 +1,23 @@
+@import "../../../variables/variables.scss";
+
+.container {
+  width: 100%;
+
+  // position: absolute;
+  button {
+    background-color: $purple;
+    box-shadow: 0px 0px 2px 2px $placeholder-light-color;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    right: 25em;
+    bottom: 30px;
+    cursor: pointer;
+
+    fa-icon {
+      color: $white;
+      font-size: 30px;
+    }
+  }
+}

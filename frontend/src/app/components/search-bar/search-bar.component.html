@@ -1,0 +1,24 @@
+<nav>
+  <div class="search-bar-container">
+    <input
+      class="search-bar-input"
+      type="text"
+      name=""
+      id="search-bar-input"
+      placeholder="Search note..."
+    />
+    <button class="search-bar-btn" id="search-bar-btn">
+      <fa-icon class="mag-glass-icon" [icon]="faMagnifyingGlass"></fa-icon>
+    </button>
+  </div>
+  <!-- <div class="status-container">
+    <select id="status" class="status" name="status" id="status">
+      <option value="all">ALL</option>
+      <option value="complete">Complete</option>
+      <option value="incomplete">Incomplete</option>
+    </select>
+  </div> -->
+  <button class="dark-mode-btn" (click)="toggleDarkMode()">
+    <fa-icon class="moon-icon" [icon]="faDarkMode"></fa-icon>
+  </button>
+</nav>

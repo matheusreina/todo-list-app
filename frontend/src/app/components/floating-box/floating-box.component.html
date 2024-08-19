@@ -1,0 +1,17 @@
+<div
+  id="background"
+  class="backscreen"
+  [ngClass]="{ 'dark-mode': isDarkMode }"
+  (click)="closeWindow()"
+>
+  <!-- Dark mode V -->
+  <div class="container" [ngClass]="{ 'dark-mode': isDarkMode }">
+    <h2>NEW NOTE</h2>
+    <input type="text" placeholder="Input your note..." />
+
+    <div class="btn-container">
+      <button (click)="closeWindow()" class="cancel">CANCEL</button>
+      <button class="apply">APPLY</button>
+    </div>
+  </div>
+</div>

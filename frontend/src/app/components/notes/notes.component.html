@@ -1,0 +1,25 @@
+<div class="container" [ngClass]="{ 'dark-mode': isDarkMode }">
+  <div class="notes-container">
+    <input
+      class="checkbox"
+      type="checkbox"
+      id="{{ noteId }}"
+      (change)="onCheckedboxChange()"
+    />
+    <label
+      [ngClass]="{ 'box-checked': isChecked }"
+      class="note"
+      for="{{ noteId }}"
+      >{{ note }}</label
+    >
+  </div>
+  <div class="btn-container">
+    <button class="edit-btn">
+      <fa-icon [icon]="faPenToSquare"></fa-icon>
+    </button>
+    <button class="delete-btn">
+      <fa-icon [icon]="faTrash"></fa-icon>
+    </button>
+  </div>
+</div>
+<div class="divider"></div>

@@ -1,0 +1,107 @@
+// Imports
+@import "../../../variables/variables.scss";
+
+nav {
+  display: flex;
+  gap: 15px;
+
+  .search-bar-container {
+    font-family: "Inter", sans-serif;
+    position: relative;
+    .search-bar-input {
+      height: 45px;
+      padding: 0 60px 0 20px;
+      width: 650px;
+      font-size: 18px;
+      border: solid 2px $purple;
+      border-radius: 6px;
+      color: $purple;
+      background-color: $white;
+
+      &::placeholder {
+        color: $placeholder-light-color;
+        font-family: "Inter", sans-serif;
+      }
+    }
+
+    .search-bar-btn {
+      position: absolute;
+      height: 45px;
+      right: 0;
+      padding: 0px 16px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      border-left: none;
+      border-radius: 6px;
+      color: $purple;
+
+      .mag-glass-icon {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .status-container {
+    .status {
+      width: 160px;
+      height: 45px;
+      padding: 0px 16px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: $purple;
+      border: transparent solid 2px;
+      border-radius: 6px;
+      color: $white;
+    }
+  }
+
+  .dark-mode-btn {
+    position: relative;
+    height: 45px;
+    width: 46px;
+    cursor: pointer;
+    background-color: $purple;
+    color: $white;
+    border: transparent solid 2px;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:active {
+      background-color: $btn-focus;
+    }
+
+    .moon-icon {
+      position: absolute;
+      font-size: 28px;
+    }
+  }
+}
+
+// Dark mode
+input {
+  &.dark-mode {
+    background-color: $black !important;
+    border: solid 2px $white !important;
+    color: $white !important;
+
+    &::placeholder {
+      color: $placeholder-dark-color !important;
+    }
+
+    .mag-glass-icon {
+      color: $white;
+    }
+  }
+}
+
+button {
+  &.dark-mode {
+    background-color: transparent !important;
+    border: none !important;
+    color: $white !important;
+  }
+}

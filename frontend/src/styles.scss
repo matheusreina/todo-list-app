@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+// Imports:
+@import "./variables/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  background-color: $white;
+  color: $black;
+}
+
+.dark-mode {
+  background-color: $black !important;
+  color: $white !important;
+}

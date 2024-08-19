@@ -1,0 +1,7 @@
+<app-floating-box
+  *ngIf="isNewNoteWindowVisible"
+  (close)="closeNewNoteWindow()"
+></app-floating-box>
+<app-front></app-front>
+<app-add-button></app-add-button>
+<router-outlet />
